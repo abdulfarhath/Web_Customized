@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Element Remover and Styler</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        label, input, textarea {
+            width: 100%;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Remove Elements</h3>
+    <label for="removeInput">Class/ID Name:</label>
+    <input type="text" id="removeInput" placeholder="Enter class or id to remove" />
+    <button id="removeBtn">Remove Element</button>
+
+    <h3>Apply Custom CSS</h3>
+    <label for="cssInput">CSS (e.g., color: red;):</label>
+    <textarea id="cssInput" placeholder="Enter custom CSS to apply"></textarea>
+    <label for="cssTarget">Class/ID Name to Apply CSS:</label>
+    <input type="text" id="cssTarget" placeholder="Enter class or id to apply CSS" />
+    <button id="applyCssBtn">Apply CSS</button>
+
+    <button id="resetCssBtn">Reset CSS</button>
+    <button id="resetRemoveBtn">Reset Removals</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
